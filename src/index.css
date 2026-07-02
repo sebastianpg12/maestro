@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+}
+
+.paw-dots {
+  position: relative;
+  isolation: isolate;
+}
+
+.paw-dots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.35) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}

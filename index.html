@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maestro Animal — Educando corazones, protegiendo vidas</title>
+    <meta name="description" content="Movimiento que educa desde la empatía para despertar conciencia sobre el respeto y cuidado animal." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Complemento del truco en 404.html: restaura la URL real que GitHub
+      // Pages redirigió como query param, antes de que monte React Router.
+      ;(function (l) {
+        if (l.search[1] === 'p' && l.search[2] === '=') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&')
+          })
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded[0].slice(2) + (decoded[1] ? '?' + decoded[1].slice(2) : '') + l.hash,
+          )
+        }
+      })(window.location)
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
