@@ -1,6 +1,5 @@
 import { Target, Eye, CheckCircle2 } from 'lucide-react'
 import PageHero from '@/components/PageHero.jsx'
-import Badge from '@/components/ui/Badge.jsx'
 import Card from '@/components/ui/Card.jsx'
 import ValuesSection from '@/components/home/ValuesSection.jsx'
 import TeamSection from '@/components/home/TeamSection.jsx'
@@ -10,29 +9,36 @@ import { IMAGES } from '@/lib/images.js'
 const NOSOTROS_VALUES = [
   {
     icon: 'GraduationCap',
-    title: 'Educación',
-    desc: 'Creemos que el conocimiento es la herramienta más poderosa para generar cambio. A través de talleres, charlas y materiales educativos, formamos ciudadanos conscientes y responsables.',
+    title: 'Educar el corazón',
+    desc: 'Creamos talleres, cuentos, actividades y experiencias que despiertan empatía, promueven la tenencia responsable y enseñan respeto por los animales y la vida.',
     bg: 'bg-brand-50',
     iconBg: 'bg-brand-500',
   },
   {
-    icon: 'Users',
-    title: 'Comunidad',
-    desc: 'Trabajamos de la mano con vecinos, escuelas, organizaciones y gobiernos locales. Juntos construimos redes de protección y cuidado para los animales.',
-    bg: 'bg-teal-50',
-    iconBg: 'bg-teal-500',
-  },
-  {
     icon: 'Heart',
-    title: 'Empatía',
-    desc: 'Cada ser vivo merece respeto y compasión. Fomentamos la empatía como valor fundamental, enseñando a ponernos en el lugar del otro.',
+    title: 'Empatía activa',
+    desc: 'Creemos en una empatía que no se queda solo en sentir. Invitamos a actuar, cuidar, orientar y denunciar de manera informada cuando un animal necesita ayuda.',
     bg: 'bg-rose-50',
     iconBg: 'bg-rose-500',
   },
   {
     icon: 'Sparkles',
-    title: 'Transparencia',
-    desc: 'Operamos con honestidad y rendimos cuentas a nuestra comunidad. Cada donación, cada acción, cada resultado es compartido abiertamente.',
+    title: 'Creatividad disruptiva',
+    desc: 'Usamos el arte, el juego, la escritura, el muralismo y las estaciones sensoriales para hacer del aprendizaje una experiencia viva, memorable y transformadora.',
+    bg: 'bg-teal-50',
+    iconBg: 'bg-teal-500',
+  },
+  {
+    icon: 'Scale',
+    title: 'Corresponsabilidad ciudadana',
+    desc: 'El bienestar animal es una tarea compartida. Por eso ayudamos a las comunidades a conocer las rutas, leyes y acciones necesarias para proteger a los animales.',
+    bg: 'bg-blue-50',
+    iconBg: 'bg-blue-500',
+  },
+  {
+    icon: 'HandHeart',
+    title: 'Amor y conexión emocional',
+    desc: 'Creemos en el vínculo profundo entre humanos, animales y tierra. Cuando aprendemos a cuidar, también fortalecemos nuestra humanidad y el tejido social.',
     bg: 'bg-amber-50',
     iconBg: 'bg-amber-500',
   },
@@ -53,37 +59,137 @@ const ACTIONS = [
   },
 ]
 
+const STORY_BLOCKS = [
+  {
+    title: 'Cuando el arte y la pedagogía se abrazan',
+    image: IMAGES.catDog,
+    alt: 'Perro junto al mural botánico que le pintaron en casa',
+    paragraphs: [
+      'La idea tomó forma en una conversación íntima, en casa, junto a mi pareja. Hablábamos del dolor que nos producía ver tantas historias de abandono y maltrato, pero también de la necesidad de convertir esa tristeza en acción.',
+      'Nos preguntamos: ¿Cómo hablar de bienestar animal sin que sea solo un discurso más? ¿Cómo llegar al corazón de un niño, de un joven o de un adulto en medio de un mundo lleno de pantallas, ruido y distracciones? ¿Cómo enseñar desde la sensibilidad y no desde el miedo?',
+      'La respuesta apareció con fuerza: a través del arte, la lúdica, la pedagogía y la experiencia. Desde allí unimos caminos, saberes y pasiones: la investigación, la historia del arte, el muralismo botánico, la educación experiencial y el amor profundo por los animales.',
+      'Porque creemos que cuando el arte toca el corazón, la educación deja huella.',
+    ],
+  },
+  {
+    title: 'Metodologías disruptivas para aprender haciendo',
+    image: IMAGES.vetCheck,
+    alt: 'Joven pintando una figura de arcilla en un taller de Maestro Animal',
+    reverse: true,
+    paragraphs: [
+      'En Maestro Animal no creemos en las clases silenciosas, los discursos lejanos ni las prohibiciones que nacen únicamente desde el miedo. Creemos en experiencias que se viven, se sienten y se recuerdan.',
+      'Por eso diseñamos laboratorios de empatía itinerantes: espacios educativos, creativos y participativos que despiertan la curiosidad, activan los sentidos y ayudan a las personas a ponerse en el lugar del otro.',
+    ],
+  },
+  {
+    title: 'Dentro y fuera del aula',
+    image: IMAGES.guineaPigs,
+    alt: 'Taller comunitario de Maestro Animal en las laderas de Medellín',
+    paragraphs: [
+      'Llevamos nuestras experiencias a colegios, parques, bibliotecas, espacios culturales y comunidades. Creemos que la educación no ocurre solo en un salón: también sucede en el territorio, en la conversación, en el juego, en el arte y en el encuentro con otros.',
+    ],
+  },
+  {
+    title: 'Aprender sintiendo',
+    image: IMAGES.dogToy,
+    alt: 'Niños aprendiendo con tarjetas de animales en un taller',
+    reverse: true,
+    paragraphs: [
+      'Creamos actividades visuales, auditivas, corporales y emocionales para que cada participante pueda comprender, desde la experiencia, que los animales sienten, comunican, necesitan cuidado y merecen respeto.',
+      'No buscamos imponer una idea. Buscamos despertar una pregunta interna: ¿cómo puedo relacionarme mejor con los animales y con la vida que me rodea?',
+    ],
+  },
+]
+
 export default function Nosotros() {
   return (
     <>
       <PageHero
         eyebrow="Quiénes somos"
-        title="Un movimiento nacido del"
-        accent="amor"
-        subtitle="Somos una organización sin fines de lucro dedicada a la educación, protección y bienestar animal. Creemos que cada vida importa."
+        title="Mediadores al servicio de"
+        accent="las especies"
+        subtitle="Un movimiento educativo y social que une el arte, la pedagogía y el amor por los animales para sembrar empatía y despertar conciencia."
       />
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
           <div className="grid grid-cols-2 gap-4">
-            <img src={IMAGES.dogToy} alt="Perro rescatado" className="h-56 w-full rounded-xl object-cover" />
-            <img src={IMAGES.catDog} alt="Gato y perro" className="h-56 w-full rounded-xl object-cover" />
+            <img src={IMAGES.puppyFlowers} alt="Peludo de Maestro Animal" className="h-56 w-full rounded-xl object-cover" />
+            <img src={IMAGES.catPortrait} alt="Gato acompañante" className="h-56 w-full rounded-xl object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl font-extrabold text-ink sm:text-4xl">Nuestra Historia</h2>
+            <p className="text-sm font-semibold uppercase tracking-wide text-brand-600">
+              Nuestra Historia: el latido detrás de Maestro Animal
+            </p>
+            <h2 className="mt-3 text-3xl font-extrabold text-ink sm:text-4xl">
+              El origen de una idea con alma
+            </h2>
             <p className="mt-6 leading-relaxed text-gray-600">
-              <strong className="text-ink">Maestro Animal</strong> nació en 2018 de un pequeño grupo de voluntarios
-              que compartían un sueño: un mundo donde humanos y animales convivan en armonía y respeto mutuo.
+              <strong className="text-ink">Maestro Animal</strong> nació a principios del año 2024, después de
+              recorrer distintos rincones de Antioquia y encontrarnos de frente con una realidad que duele:
+              animales abandonados, maltratados, invisibilizados o tratados como si no sintieran.
             </p>
             <p className="mt-4 leading-relaxed text-gray-600">
-              Lo que comenzó como talleres gratuitos en parques y escuelas, se ha convertido en un movimiento
-              que alcanza a miles de personas cada año.
+              Cada historia que vimos nos arrugó el corazón. Pero también nos hizo una pregunta imposible de
+              ignorar: ¿qué podemos hacer para que esto no siga repitiéndose?
             </p>
             <p className="mt-4 leading-relaxed text-gray-600">
-              Hoy, contamos con un equipo de profesionales y más de 200 voluntarios comprometidos que trabajan
-              incansablemente para educar, rescatar y transformar la relación entre las personas y los animales.
+              Reconocemos profundamente la labor de los albergues, refugios, rescatistas y personas que
+              entregan su vida a salvar animales. Su trabajo es enorme, necesario y profundamente valioso.
+              Sin embargo, entendimos que muchas veces ellos atienden la consecuencia de un problema que nace
+              mucho antes: en la falta de educación, empatía y conciencia. Por eso decidimos ir a la raíz.
+            </p>
+            <p className="mt-4 leading-relaxed text-gray-600">
+              Así nació Maestro Animal: desde la convicción de que la educación puede volver a despertar el
+              corazón de una sociedad y guiarnos hacia una convivencia más justa, compasiva y consciente.
             </p>
           </div>
+        </div>
+
+        <div className="mt-24 space-y-24">
+          {STORY_BLOCKS.map((block) => (
+            <div
+              key={block.title}
+              className={`grid grid-cols-1 items-center gap-12 lg:grid-cols-2 ${
+                block.reverse ? 'lg:[&>*:first-child]:order-2' : ''
+              }`}
+            >
+              <img src={block.image} alt={block.alt} className="h-80 w-full rounded-2xl object-cover shadow-card" />
+              <div>
+                <h3 className="text-2xl font-bold text-ink sm:text-3xl">{block.title}</h3>
+                {block.paragraphs.map((p, i) => (
+                  <p key={i} className="mt-4 leading-relaxed text-gray-600">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto mt-24 max-w-3xl text-center">
+          <h3 className="text-2xl font-bold text-ink sm:text-3xl">Ciudadanía activa y legal</h3>
+          <p className="mt-4 leading-relaxed text-gray-600">
+            También acercamos a la comunidad a las herramientas legales que existen para proteger a los
+            animales. Traducimos leyes, rutas de atención y mecanismos de denuncia en ejercicios prácticos,
+            juegos y dinámicas fáciles de comprender.
+          </p>
+          <p className="mt-4 leading-relaxed text-gray-600">
+            Queremos que las personas aprendan a identificar el maltrato, conozcan las rutas locales, pierdan
+            el miedo a denunciar y entiendan que proteger a un animal también es un acto de ciudadanía.
+          </p>
+
+          <h3 className="mt-16 text-2xl font-bold text-ink sm:text-3xl">Un mismo hogar</h3>
+          <p className="mt-4 leading-relaxed text-gray-600">
+            Hoy, cada taller, cada conversación y cada corazón tocado nos recuerda que un mundo más compasivo
+            sí es posible. Maestro Animal existe para sembrar empatía, despertar conciencia y recordarnos algo
+            esencial: humanos, animales y tierra habitamos un mismo hogar. Y cuando aprendemos a cuidar a los
+            más vulnerables, también aprendemos a cuidar la vida en todas sus formas.
+          </p>
+
+          <p className="mt-10 text-2xl font-bold italic text-brand-600">
+            &ldquo;Hagamos que los cambios sucedan&rdquo;
+          </p>
         </div>
       </section>
 
@@ -95,9 +201,10 @@ export default function Nosotros() {
             </span>
             <h3 className="mt-6 text-2xl font-bold text-ink">Misión</h3>
             <p className="mt-3 leading-relaxed text-gray-600">
-              Educar a la comunidad sobre el respeto, cuidado y protección de los animales, promoviendo la
-              tenencia responsable y despertando la empatía hacia todas las formas de vida a través de
-              programas educativos, rescate y acciones comunitarias.
+              Transformar la forma en que las personas se relacionan con los animales, a través de
+              experiencias educativas, lúdicas y sensoriales que despiertan empatía, cuidado y respeto por
+              toda forma de vida. En Maestro Animal educamos desde el arte, el juego y la acción para formar
+              comunidades más conscientes, compasivas y protectoras.
             </p>
           </Card>
           <Card className="bg-white p-10">
@@ -106,9 +213,10 @@ export default function Nosotros() {
             </span>
             <h3 className="mt-6 text-2xl font-bold text-ink">Visión</h3>
             <p className="mt-3 leading-relaxed text-gray-600">
-              Ser la organización líder en educación y bienestar animal en Latinoamérica, construyendo
-              comunidades donde el respeto hacia los animales sea un valor fundamental y donde ningún animal
-              sufra por negligencia o maltrato.
+              Para el año 2030, Maestro Animal será un referente querido y recomendado en educación activa
+              para el bienestar animal en nuestra región. Soñamos con comunidades donde el maltrato, el
+              abandono y la indiferencia den paso a una cultura viva de empatía, protección y respeto por cada
+              ser sintiente.
             </p>
           </Card>
         </div>
@@ -118,7 +226,7 @@ export default function Nosotros() {
         eyebrow="Lo que nos define"
         title="Nuestros Valores"
         titleAccent="Valores"
-        subtitle=""
+        subtitle="En Maestro Animal, los valores no son palabras bonitas: son principios que llevamos al aula, al territorio y a cada experiencia que creamos."
         values={NOSOTROS_VALUES}
       />
 

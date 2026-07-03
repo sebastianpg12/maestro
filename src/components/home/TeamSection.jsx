@@ -17,15 +17,25 @@ export default function TeamSection({
         <p className="mt-4 text-gray-600">{subtitle}</p>
       </div>
 
-      <div className="mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div
+        className={`mx-auto mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 ${
+          TEAM.length > 2 ? 'lg:grid-cols-4' : 'max-w-2xl'
+        }`}
+      >
         {TEAM.map((member) => (
           <div key={member.name} className="text-center">
             <div className="relative mx-auto h-32 w-32">
-              <img
-                src={member.photo}
-                alt={member.name}
-                className="h-32 w-32 rounded-full border-4 border-brand-100 object-cover"
-              />
+              {member.photo ? (
+                <img
+                  src={member.photo}
+                  alt={member.name}
+                  className="h-32 w-32 rounded-full border-4 border-brand-100 object-cover"
+                />
+              ) : (
+                <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-brand-100 bg-brand-50 text-3xl font-extrabold text-brand-500">
+                  {member.name.charAt(0)}
+                </div>
+              )}
               <span className="absolute bottom-0 right-1 flex h-8 w-8 items-center justify-center rounded-full bg-brand-500 text-sm">
                 🐾
               </span>

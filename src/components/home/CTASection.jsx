@@ -1,5 +1,6 @@
 import { Heart, Users } from 'lucide-react'
 import Button from '@/components/ui/Button.jsx'
+import { IMAGES } from '@/lib/images.js'
 
 export default function CTASection() {
   return (
@@ -32,17 +33,13 @@ export default function CTASection() {
         </div>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-slate-400">
           <span className="flex -space-x-2">
-            {[
-              'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=60&q=80',
-              'https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=60&q=80',
-              'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=60&q=80',
-            ].map((src, i) => (
+            {[IMAGES.dogSmile, IMAGES.catPortrait, IMAGES.puppyFlowers].map((src, i) => (
               <img key={i} src={src} alt="" className="h-8 w-8 rounded-full border-2 border-[#0b1220] object-cover" />
             ))}
           </span>
-          <span>+200 voluntarios</span>
+          <span>9 instituciones aliadas</span>
           <span className="text-slate-600">|</span>
-          <span>100% de tu donación va a los animales</span>
+          <span>770 personas impactadas</span>
         </div>
       </div>
     </section>

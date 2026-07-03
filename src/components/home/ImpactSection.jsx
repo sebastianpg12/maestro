@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { GraduationCap, PawPrint, Users, Heart } from 'lucide-react'
+import { GraduationCap, Users, Building2 } from 'lucide-react'
 import Badge from '@/components/ui/Badge.jsx'
 
 const STATS = [
-  { icon: GraduationCap, value: 150, suffix: '+', label: 'Talleres impartidos', sub: 'Educando comunidades' },
-  { icon: PawPrint, value: 500, suffix: '+', label: 'Animales ayudados', sub: 'Vidas transformadas' },
-  { icon: Users, value: 200, suffix: '+', label: 'Voluntarios activos', sub: 'Corazones comprometidos' },
-  { icon: Heart, value: 25, suffix: '+', label: 'Comunidades alcanzadas', sub: 'Impacto real' },
+  { icon: GraduationCap, value: 22, suffix: '', label: 'Talleres realizados', sub: 'Educando comunidades' },
+  { icon: Users, value: 770, suffix: '', label: 'Personas impactadas', sub: 'Corazones transformados' },
+  { icon: Building2, value: 9, suffix: '', label: 'Instituciones vinculadas', sub: 'Alianzas por la causa' },
 ]
 
 function useCountUp(target, active) {
@@ -55,7 +54,7 @@ export default function ImpactSection() {
           Transformando vidas, una a la vez
         </h2>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-14 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
           {STATS.map((s) => (
             <Counter key={s.label} stat={s} active={active} />
           ))}

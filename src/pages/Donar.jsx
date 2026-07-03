@@ -1,18 +1,18 @@
 import { useMemo, useState } from 'react'
-import { Heart, ShieldCheck, Gift, Stethoscope, GraduationCap, PawPrint, Users2, HandHeart, Drumstick, Megaphone } from 'lucide-react'
+import { Heart, ShieldCheck, Gift, Palette, GraduationCap, Truck, Users2, HandHeart, Drumstick, Megaphone } from 'lucide-react'
 import Card from '@/components/ui/Card.jsx'
 
 const AMOUNTS = [
-  { value: 100, label: 'Alimenta a un animal rescatado por 1 semana' },
-  { value: 250, label: 'Cubre vacunas para 5 animales' },
-  { value: 500, label: 'Financia un taller educativo completo' },
-  { value: 1000, label: 'Costea una cirugía de emergencia' },
+  { value: 20000, label: 'Cubre materiales de arte para un taller' },
+  { value: 50000, label: 'Financia un laboratorio de empatía completo' },
+  { value: 100000, label: 'Lleva un taller a una nueva institución' },
+  { value: 200000, label: 'Apoya la itinerancia a una comunidad rural' },
 ]
 
 const ALLOCATION = [
-  { icon: Stethoscope, percent: 40, title: 'Atención Médica', desc: 'Vacunas, esterilizaciones, cirugías y tratamientos para animales rescatados.' },
-  { icon: GraduationCap, percent: 30, title: 'Educación', desc: 'Talleres, materiales educativos y programas de formación comunitaria.' },
-  { icon: PawPrint, percent: 20, title: 'Rescate', desc: 'Operativos de rescate, transporte y refugio temporal para animales.' },
+  { icon: GraduationCap, percent: 45, title: 'Talleres Educativos', desc: 'Laboratorios de empatía, actividades sensoriales y experiencias de aprendizaje en comunidades.' },
+  { icon: Palette, percent: 25, title: 'Arte y Pedagogía', desc: 'Materiales, murales botánicos y recursos creativos para cada experiencia.' },
+  { icon: Truck, percent: 20, title: 'Itinerancia', desc: 'Transporte y logística para llevar nuestras experiencias a más territorios.' },
   { icon: Users2, percent: 10, title: 'Operación', desc: 'Gastos administrativos mínimos para mantener la organización funcionando.' },
 ]
 
@@ -44,7 +44,7 @@ const OTHER_WAYS = [
 ]
 
 export default function Donar() {
-  const [selected, setSelected] = useState(250)
+  const [selected, setSelected] = useState(50000)
   const [custom, setCustom] = useState('')
 
   const amount = useMemo(() => (custom ? Number(custom) : selected), [custom, selected])
@@ -87,7 +87,7 @@ export default function Donar() {
                       ✓
                     </span>
                   )}
-                  <p className="text-2xl font-extrabold text-ink">${a.value.toLocaleString('es-MX')}</p>
+                  <p className="text-2xl font-extrabold text-ink">${a.value.toLocaleString('es-CO')}</p>
                   <p className="mt-1 text-xs leading-snug text-gray-500">{a.label}</p>
                 </button>
               )
@@ -110,7 +110,7 @@ export default function Donar() {
           </div>
 
           <button className="mt-7 flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand-500 text-lg font-bold text-white shadow-sm transition-colors hover:bg-brand-600">
-            <Heart className="h-5 w-5 fill-white" /> Donar ${amount ? amount.toLocaleString('es-MX') : 0} MXN
+            <Heart className="h-5 w-5 fill-white" /> Donar ${amount ? amount.toLocaleString('es-CO') : 0} COP
           </button>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">

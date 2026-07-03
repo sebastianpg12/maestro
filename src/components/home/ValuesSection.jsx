@@ -1,30 +1,30 @@
-import { GraduationCap, Users, Heart, Sparkles } from 'lucide-react'
+import { GraduationCap, Users, Heart, Sparkles, Scale, HandHeart } from 'lucide-react'
 import Badge from '@/components/ui/Badge.jsx'
 import Card from '@/components/ui/Card.jsx'
 
-export const ICONS = { GraduationCap, Users, Heart, Sparkles }
+export const ICONS = { GraduationCap, Users, Heart, Sparkles, Scale, HandHeart }
 
 export const DEFAULT_VALUES = [
   {
     icon: 'GraduationCap',
-    title: 'Educación',
-    desc: 'Creemos que el conocimiento transforma. Educamos para crear conciencia y formar ciudadanos responsables con la vida animal.',
+    title: 'Educar el corazón',
+    desc: 'Creamos talleres, cuentos y experiencias que despiertan empatía, promueven la tenencia responsable y enseñan respeto por los animales y la vida.',
     bg: 'bg-brand-50',
     iconBg: 'bg-brand-500',
   },
   {
-    icon: 'Users',
-    title: 'Comunidad',
-    desc: 'Juntos somos más fuertes. Construimos redes de apoyo y colaboración para multiplicar nuestro impacto positivo.',
-    bg: 'bg-teal-50',
-    iconBg: 'bg-teal-500',
-  },
-  {
     icon: 'Heart',
-    title: 'Empatía',
-    desc: 'Ponernos en el lugar del otro, humano o animal, es el primer paso para construir un mundo más compasivo.',
+    title: 'Empatía activa',
+    desc: 'Creemos en una empatía que no se queda solo en sentir. Invitamos a actuar, cuidar, orientar y denunciar de manera informada cuando un animal necesita ayuda.',
     bg: 'bg-rose-50',
     iconBg: 'bg-rose-500',
+  },
+  {
+    icon: 'Sparkles',
+    title: 'Creatividad disruptiva',
+    desc: 'Usamos el arte, el juego, la escritura y el muralismo para hacer del aprendizaje una experiencia viva, memorable y transformadora.',
+    bg: 'bg-teal-50',
+    iconBg: 'bg-teal-500',
   },
 ]
 
@@ -32,11 +32,11 @@ export default function ValuesSection({
   eyebrow = 'Lo que nos mueve',
   title = 'Nuestros Valores',
   titleAccent = 'Valores',
-  subtitle = 'Tres pilares fundamentales que guían cada acción, cada taller, cada rescate.',
+  subtitle = 'Los principios que llevamos al aula, al territorio y a cada experiencia que creamos.',
   values = DEFAULT_VALUES,
 }) {
   const [base, accent] = splitTitle(title, titleAccent)
-  const gridCols = values.length >= 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+  const gridCols = values.length === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
 
   return (
     <section className="bg-gray-50 py-24">

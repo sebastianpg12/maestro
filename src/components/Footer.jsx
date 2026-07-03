@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Twitter, MapPin, Mail, Phone, ArrowRight } from 'lucide-react'
 
 const NAV = [
-  { to: '/', label: 'Inicio' },
-  { to: '/nosotros', label: 'Nosotros' },
-  { to: '/talleres', label: 'Talleres' },
-  { to: '/historias', label: 'Historias' },
-  { to: '/recursos', label: 'Recursos' },
-  { to: '/contacto', label: 'Contacto' },
+  { to: '/', label: 'Portal' },
+  { to: '/nosotros', label: 'Raíz' },
+  { to: '/talleres', label: 'Actívate' },
+  { to: '/historias', label: 'Latidos' },
+  { to: '/recursos', label: 'Saber Salva' },
+  { to: '/contacto', label: 'Puente' },
 ]
 
 export default function Footer() {
@@ -59,13 +59,13 @@ export default function Footer() {
           <h3 className="text-base font-bold text-white">Contacto</h3>
           <ul className="mt-4 space-y-3 text-sm text-slate-400">
             <li className="flex items-center gap-2.5">
-              <MapPin className="h-4 w-4 shrink-0 text-brand-400" /> Ciudad de México, México
+              <MapPin className="h-4 w-4 shrink-0 text-brand-400" /> Medellín, Colombia
             </li>
             <li className="flex items-center gap-2.5">
-              <Mail className="h-4 w-4 shrink-0 text-brand-400" /> hola@maestroanimal.org
+              <Mail className="h-4 w-4 shrink-0 text-brand-400" /> maestroanimal.col@gmail.com
             </li>
             <li className="flex items-center gap-2.5">
-              <Phone className="h-4 w-4 shrink-0 text-brand-400" /> +52 55 1234 5678
+              <Phone className="h-4 w-4 shrink-0 text-brand-400" /> 312 211 7077
             </li>
           </ul>
         </div>

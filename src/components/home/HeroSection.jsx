@@ -4,9 +4,9 @@ import Badge from '@/components/ui/Badge.jsx'
 import { IMAGES } from '@/lib/images.js'
 
 const STATS = [
-  { value: '+500', label: 'Animales ayudados' },
-  { value: '+150', label: 'Talleres' },
-  { value: '+200', label: 'Voluntarios' },
+  { value: '22', label: 'Talleres realizados' },
+  { value: '770', label: 'Personas impactadas' },
+  { value: '9', label: 'Instituciones vinculadas' },
 ]
 
 export default function HeroSection() {
@@ -15,15 +15,15 @@ export default function HeroSection() {
       <div className="pointer-events-none absolute inset-0 paw-dots opacity-30" />
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:py-28">
         <div>
-          <Badge icon={Sparkles}>Educación · Empatía · Acción</Badge>
+          <Badge icon={Sparkles}>Explora nuestro universo de respeto y empatía</Badge>
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
-            Educando corazones,
+            La empatía salva,
             <br />
-            <span className="text-brand-500">protegiendo vidas</span>
+            <span className="text-brand-500">la educación transforma</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-gray-600">
-            Somos un movimiento que educa desde la empatía para despertar conciencia y
-            recordarnos que el respeto, el cuidado y el amor también se aprenden.
+            Somos un movimiento educativo y social que une el arte, la pedagogía y el amor por
+            los animales para sembrar empatía y despertar conciencia.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button to="/contacto" size="lg">
@@ -47,7 +47,7 @@ export default function HeroSection() {
           <div className="overflow-hidden rounded-[2rem] shadow-2xl">
             <img
               src={IMAGES.heroDog}
-              alt="Perro rescatado por Maestro Animal"
+              alt="Uno de los peludos de Maestro Animal"
               className="h-[420px] w-full object-cover sm:h-[480px]"
             />
           </div>
@@ -56,8 +56,8 @@ export default function HeroSection() {
               <Heart className="h-5 w-5 fill-brand-600" />
             </span>
             <div>
-              <p className="text-lg font-extrabold text-ink leading-none">+500</p>
-              <p className="text-xs text-gray-500">Vidas salvadas</p>
+              <p className="text-lg font-extrabold text-ink leading-none">770</p>
+              <p className="text-xs text-gray-500">Personas impactadas</p>
             </div>
           </div>
           <div className="absolute -right-4 bottom-10 flex items-center gap-3 rounded-2xl bg-white/95 px-5 py-3 shadow-xl backdrop-blur sm:-right-8">
@@ -65,8 +65,8 @@ export default function HeroSection() {
               <GraduationCap className="h-5 w-5" />
             </span>
             <div>
-              <p className="text-lg font-extrabold text-ink leading-none">+150</p>
-              <p className="text-xs text-gray-500">Talleres educativos</p>
+              <p className="text-lg font-extrabold text-ink leading-none">22</p>
+              <p className="text-xs text-gray-500">Talleres realizados</p>
             </div>
           </div>
         </div>

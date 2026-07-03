@@ -4,12 +4,12 @@ import { Heart, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const LINKS = [
-  { to: '/', label: 'Inicio' },
-  { to: '/nosotros', label: 'Nosotros' },
-  { to: '/talleres', label: 'Talleres' },
-  { to: '/historias', label: 'Historias' },
-  { to: '/recursos', label: 'Recursos' },
-  { to: '/contacto', label: 'Contacto' },
+  { to: '/', label: 'Portal' },
+  { to: '/nosotros', label: 'Raíz' },
+  { to: '/talleres', label: 'Actívate' },
+  { to: '/historias', label: 'Latidos' },
+  { to: '/recursos', label: 'Saber Salva' },
+  { to: '/contacto', label: 'Puente' },
 ]
 
 export default function Header() {

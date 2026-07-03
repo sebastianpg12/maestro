@@ -5,9 +5,9 @@ import Card from '@/components/ui/Card.jsx'
 import Button from '@/components/ui/Button.jsx'
 
 const INFO = [
-  { icon: MapPin, iconBg: 'bg-brand-500', title: 'Dirección', value: 'Ciudad de México, México' },
-  { icon: Mail, iconBg: 'bg-blue-500', title: 'Correo', value: 'hola@maestroanimal.org' },
-  { icon: Phone, iconBg: 'bg-fuchsia-500', title: 'Teléfono', value: '+52 55 1234 5678' },
+  { icon: MapPin, iconBg: 'bg-brand-500', title: 'Dirección', value: 'Medellín, Colombia' },
+  { icon: Mail, iconBg: 'bg-blue-500', title: 'Correo', value: 'maestroanimal.col@gmail.com' },
+  { icon: Phone, iconBg: 'bg-fuchsia-500', title: 'Teléfono', value: '312 211 7077' },
   { icon: Clock, iconBg: 'bg-amber-500', title: 'Horario', value: 'Lun - Vie: 9:00 - 18:00' },
 ]
 
@@ -34,7 +34,8 @@ export default function Contacto() {
             <MessageCircle className="h-3.5 w-3.5" /> Estamos aquí para ti
           </span>
         }
-        title="Contáctanos"
+        title="Contáctanos, aquí empieza"
+        accent="el cambio"
         subtitle="¿Tienes preguntas, sugerencias o quieres ser parte del movimiento? Nos encantaría saber de ti."
       />
 
@@ -95,7 +96,7 @@ export default function Contacto() {
               <Users className="h-8 w-8" />
               <h3 className="mt-4 text-xl font-bold">¿Quieres ser voluntario?</h3>
               <p className="mt-2 text-sm text-white/85">
-                Únete a nuestra comunidad de más de 200 voluntarios que hacen posible el cambio cada
+                Súmate a la manada que lleva el arte, la empatía y la educación a más comunidades cada
                 día.
               </p>
               <Button to="/nosotros" variant="ghost" className="mt-6">
