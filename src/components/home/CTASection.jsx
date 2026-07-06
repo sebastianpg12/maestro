@@ -9,11 +9,11 @@ export default function CTASection() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(circle at 50% 30%, rgba(34,181,104,0.35), transparent 60%)',
+            'radial-gradient(circle at 50% 30%, rgba(57,187,162,0.35), transparent 60%)',
         }}
       />
       <div className="relative mx-auto max-w-2xl px-6">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-2xl shadow-[0_0_40px_rgba(34,181,104,0.6)]">
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-2xl shadow-[0_0_40px_rgba(57,187,162,0.6)]">
           🐾
         </span>
         <h2 className="mt-6 text-3xl font-extrabold sm:text-4xl">

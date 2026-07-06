@@ -3,9 +3,9 @@ import { cn } from '@/lib/utils'
 
 const variants = {
   primary:
-    'bg-brand-500 text-white hover:bg-brand-600 shadow-sm',
+    'bg-brand-700 text-white hover:bg-brand-800 shadow-sm',
   outline:
-    'bg-white text-brand-600 border border-brand-200 hover:bg-brand-50',
+    'bg-white text-brand-700 border border-brand-200 hover:bg-brand-50',
   ghost:
     'bg-white/10 text-white border border-white/30 hover:bg-white/20',
   dark:

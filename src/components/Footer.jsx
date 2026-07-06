@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Twitter, MapPin, Mail, Phone, ArrowRight } from 'lucide-react'
+import logo from '@/assets/brand/logo-wordmark.png'
 
 const NAV = [
   { to: '/', label: 'Portal' },
@@ -15,14 +16,8 @@ export default function Footer() {
     <footer className="bg-[#0b1220] text-slate-300">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Link to="/" className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-lg">
-              🐾
-            </span>
-            <span className="leading-tight">
-              <span className="block text-lg font-extrabold text-white">Maestro Animal</span>
-              <span className="block text-xs font-medium text-brand-400">Educando corazones</span>
-            </span>
+          <Link to="/">
+            <img src={logo} alt="Maestro Animal" className="h-10 w-auto brightness-110" />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
             Educamos desde la empatía para proteger la vida animal, despertar conciencia y

@@ -187,7 +187,7 @@ export default function Nosotros() {
             más vulnerables, también aprendemos a cuidar la vida en todas sus formas.
           </p>
 
-          <p className="mt-10 text-2xl font-bold italic text-brand-600">
+          <p className="mt-10 text-2xl font-bold italic text-accent-600">
             &ldquo;Hagamos que los cambios sucedan&rdquo;
           </p>
         </div>

@@ -92,7 +92,7 @@ export default function Contacto() {
           </Card>
 
           <div className="space-y-6 lg:col-span-2">
-            <Card className="bg-gradient-to-br from-brand-500 to-brand-700 p-8 text-white">
+            <Card className="bg-gradient-to-br from-brand-600 to-brand-800 p-8 text-white">
               <Users className="h-8 w-8" />
               <h3 className="mt-4 text-xl font-bold">¿Quieres ser voluntario?</h3>
               <p className="mt-2 text-sm text-white/85">
@@ -129,7 +129,7 @@ export default function Contacto() {
                 <summary className="cursor-pointer list-none font-semibold text-ink marker:content-none">
                   <span className="flex items-center justify-between">
                     {f.q}
-                    <span className="text-brand-500 transition-transform group-open:rotate-45">＋</span>
+                    <span className="text-brand-700 transition-transform group-open:rotate-45">＋</span>
                   </span>
                 </summary>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">{f.a}</p>

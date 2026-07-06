@@ -19,7 +19,7 @@ export default function HeroSection() {
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-ink sm:text-5xl lg:text-[3.4rem]">
             La empatía salva,
             <br />
-            <span className="text-brand-500">la educación transforma</span>
+            <span className="text-accent-600">la educación transforma</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-gray-600">
             Somos un movimiento educativo y social que une el arte, la pedagogía y el amor por

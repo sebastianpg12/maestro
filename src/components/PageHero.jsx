@@ -3,7 +3,7 @@ import Badge from '@/components/ui/Badge.jsx'
 export default function PageHero({ icon, eyebrow, title, accent, subtitle, dark = false }) {
   if (dark) {
     return (
-      <section className="paw-dots relative overflow-hidden bg-gradient-to-br from-brand-500 to-brand-700 py-20 text-center text-white">
+      <section className="paw-dots relative overflow-hidden bg-gradient-to-br from-brand-600 to-brand-800 py-20 text-center text-white">
         <div className="mx-auto max-w-2xl px-6">
           {icon && (
             <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/15 text-2xl">
@@ -24,7 +24,7 @@ export default function PageHero({ icon, eyebrow, title, accent, subtitle, dark 
       <div className="mx-auto max-w-2xl px-6">
         {eyebrow && <Badge className="mx-auto">{eyebrow}</Badge>}
         <h1 className="mt-6 text-4xl font-extrabold leading-tight text-ink sm:text-5xl">
-          {title} {accent && <span className="text-brand-500">{accent}</span>}
+          {title} {accent && <span className="text-brand-600">{accent}</span>}
         </h1>
         {subtitle && <p className="mt-5 text-gray-600">{subtitle}</p>}
       </div>

@@ -44,7 +44,7 @@ export default function ValuesSection({
         <div className="mx-auto max-w-2xl text-center">
           <Badge className="mx-auto">{eyebrow}</Badge>
           <h2 className="mt-5 text-3xl font-extrabold text-ink sm:text-4xl">
-            {base} <span className="text-brand-500">{accent}</span>
+            {base} <span className="text-brand-600">{accent}</span>
           </h2>
           {subtitle && <p className="mt-4 text-gray-600">{subtitle}</p>}
         </div>

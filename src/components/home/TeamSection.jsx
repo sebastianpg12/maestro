@@ -12,7 +12,7 @@ export default function TeamSection({
       <div className="mx-auto max-w-2xl text-center">
         <Badge className="mx-auto">{eyebrow}</Badge>
         <h2 className="mt-5 text-3xl font-extrabold text-ink sm:text-4xl">
-          {title} <span className="text-brand-500">{accent}</span>
+          {title} <span className="text-brand-600">{accent}</span>
         </h2>
         <p className="mt-4 text-gray-600">{subtitle}</p>
       </div>
@@ -32,7 +32,7 @@ export default function TeamSection({
                   className="h-32 w-32 rounded-full border-4 border-brand-100 object-cover"
                 />
               ) : (
-                <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-brand-100 bg-brand-50 text-3xl font-extrabold text-brand-500">
+                <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-brand-100 bg-brand-50 text-3xl font-extrabold text-brand-600">
                   {member.name.charAt(0)}
                 </div>
               )}

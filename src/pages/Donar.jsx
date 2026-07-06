@@ -51,7 +51,7 @@ export default function Donar() {
 
   return (
     <>
-      <section className="paw-dots bg-gradient-to-br from-brand-500 to-brand-700 pb-40 pt-20 text-center text-white">
+      <section className="paw-dots bg-gradient-to-br from-brand-600 to-brand-800 pb-40 pt-20 text-center text-white">
         <div className="mx-auto max-w-2xl px-6">
           <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/15">
             <Heart className="h-6 w-6 fill-white" />
@@ -109,16 +109,16 @@ export default function Donar() {
             </div>
           </div>
 
-          <button className="mt-7 flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand-500 text-lg font-bold text-white shadow-sm transition-colors hover:bg-brand-600">
+          <button className="mt-7 flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand-700 text-lg font-bold text-white shadow-sm transition-colors hover:bg-brand-800">
             <Heart className="h-5 w-5 fill-white" /> Donar ${amount ? amount.toLocaleString('es-CO') : 0} COP
           </button>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="h-4 w-4 text-brand-500" /> Pago seguro
+              <ShieldCheck className="h-4 w-4 text-brand-600" /> Pago seguro
             </span>
             <span className="flex items-center gap-1.5">
-              <Gift className="h-4 w-4 text-brand-500" /> Deducible de impuestos
+              <Gift className="h-4 w-4 text-brand-600" /> Deducible de impuestos
             </span>
           </div>
         </Card>

@@ -5,17 +5,28 @@ export default {
     extend: {
       colors: {
         ink: '#0f1b14',
+        // Verde tomado directamente del logo de Maestro Animal (#39bba2).
         brand: {
-          50: '#eefdf3',
-          100: '#d6f8e1',
-          200: '#aeefc7',
-          300: '#78e1a6',
-          400: '#43cb82',
-          500: '#22b568',
-          600: '#169454',
-          700: '#147645',
-          800: '#145d39',
-          900: '#124d31',
+          50: '#effaf8',
+          100: '#dcf4f0',
+          200: '#b5e8de',
+          300: '#82d9c8',
+          400: '#5bcdb7',
+          500: '#39bba2',
+          600: '#2d9581',
+          700: '#247566',
+          800: '#1d5e51',
+          900: '#15463d',
+          950: '#0f332c',
+        },
+        // Naranja del slogan del logo, para acentos puntuales.
+        accent: {
+          50: '#fef1ec',
+          100: '#fde1d6',
+          400: '#f4835f',
+          500: '#f16443',
+          600: '#dd4726',
+          700: '#b8391f',
         },
       },
       fontFamily: {

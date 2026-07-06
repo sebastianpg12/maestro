@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Heart, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import logo from '@/assets/brand/logo-wordmark.png'
 
 const LINKS = [
   { to: '/', label: 'Portal' },
@@ -18,14 +19,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <NavLink to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 text-lg">
-            🐾
-          </span>
-          <span className="leading-tight">
-            <span className="block text-lg font-extrabold text-ink">Maestro Animal</span>
-            <span className="block text-xs font-medium text-brand-600">Educando corazones</span>
-          </span>
+        <NavLink to="/" className="flex items-center" onClick={() => setOpen(false)}>
+          <img src={logo} alt="Maestro Animal" className="h-9 w-auto sm:h-10" />
         </NavLink>
 
         <nav className="hidden items-center gap-1 lg:flex">
@@ -49,7 +44,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <NavLink
             to="/donar"
-            className="hidden h-11 items-center gap-2 rounded-full bg-brand-500 px-6 text-[15px] font-semibold text-white shadow-sm transition-colors hover:bg-brand-600 sm:inline-flex"
+            className="hidden h-11 items-center gap-2 rounded-full bg-brand-700 px-6 text-[15px] font-semibold text-white shadow-sm transition-colors hover:bg-brand-800 sm:inline-flex"
           >
             <Heart className="h-4 w-4 fill-white" />
             Donar
@@ -85,7 +80,7 @@ export default function Header() {
           <NavLink
             to="/donar"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-brand-500 text-[15px] font-semibold text-white sm:hidden"
+            className="mt-2 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-brand-700 text-[15px] font-semibold text-white sm:hidden"
           >
             <Heart className="h-4 w-4 fill-white" />
             Donar

@@ -46,7 +46,7 @@ export default function ImpactSection() {
   return (
     <section
       ref={ref}
-      className="paw-dots relative overflow-hidden bg-gradient-to-br from-brand-500 to-brand-700 py-24 text-white"
+      className="paw-dots relative overflow-hidden bg-gradient-to-br from-brand-600 to-brand-800 py-24 text-white"
     >
       <div className="mx-auto max-w-7xl px-6 text-center">
         <Badge className="mx-auto bg-white/15 text-white">Nuestro impacto</Badge>

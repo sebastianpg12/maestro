@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#16a34a"/>
-  <circle cx="11" cy="12" r="2.4" fill="#0f1b14"/>
-  <circle cx="21" cy="12" r="2.4" fill="#0f1b14"/>
-  <circle cx="7" cy="18" r="2" fill="#0f1b14"/>
-  <circle cx="25" cy="18" r="2" fill="#0f1b14"/>
-  <ellipse cx="16" cy="21" rx="5" ry="4" fill="#0f1b14"/>
+  <rect width="32" height="32" rx="8" fill="#2d9581"/>
+  <circle cx="11" cy="12" r="2.4" fill="#ffffff"/>
+  <circle cx="21" cy="12" r="2.4" fill="#ffffff"/>
+  <circle cx="7" cy="18" r="2" fill="#ffffff"/>
+  <circle cx="25" cy="18" r="2" fill="#ffffff"/>
+  <ellipse cx="16" cy="21" rx="5" ry="4" fill="#ffffff"/>
 </svg>

@@ -16,7 +16,7 @@ export default function StorySection() {
         <div>
           <Badge>Nuestra Historia</Badge>
           <h2 className="mt-5 text-3xl font-extrabold leading-tight text-ink sm:text-4xl">
-            El latido detrás de <span className="text-brand-500">Maestro Animal</span>
+            El latido detrás de <span className="text-brand-600">Maestro Animal</span>
           </h2>
           <p className="mt-6 leading-relaxed text-gray-600">
             Maestro Animal nació a principios de 2024, después de recorrer distintos rincones de
